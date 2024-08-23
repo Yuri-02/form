@@ -1,0 +1,33 @@
+.event-create {
+    display: flex;
+    flex-direction: column;
+    padding: 200px;
+    background-color: white;
+}
+
+legend{
+    font-size: 24px;
+    font-weight:bolder;
+    padding: 50px 40px;
+}
+
+label {
+    font-size: 17px;
+}
+
+label span {
+    font-size: 13px;
+    color: gray;
+}
+
+.event-information {
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}

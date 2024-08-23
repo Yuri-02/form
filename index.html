@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Crie seu evento</title>
+</head>
+<body>
+    <form class="event-create">
+        <fieldset class="event-information">
+            <legend>
+                Informações do Evento
+            </legend>
+
+            <label for="event-title"> Título do evento <span>(mínimo 8 caracteres)</span></label>
+            <input class="event-title-class" id="event-title" type="text" name="" placeholder="Digite o título do seu evento" maxlength="8" required />
+        
+            <label for="event-link"> Link do evento <span>(comece com https://)</span></label>
+            <input class="link-event-class" id="event-link" type="text" name="" placeholder="Digite o link do evento" required/>
+            
+            <label for="whatsapp"> Whatsapp para contato <span> (somente números) </span></label>
+            <input class="whatsapp-class" id="whatsapp" type="number" placeholder="Digite seu número"  required/>
+
+            <label for="extra-information"> Informações extras <span> (Máx. 300 caracteres)</span> </label>
+            <textarea name="" id="extra-information" rows="8" cols="50" maxlength="300"></textarea>
+            
+            <label> Categoria </label>
+            <select name="" id="categorie">
+                <option value="1"> Gameplay </option>
+                <option value="2"> Ao vivo </option>
+                <option value="3"> Podcast </option>
+                <option value="4"> Mentoria </option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Privacidade
+            </legend>
+
+            <label for="admnistrator-email"> E-mail do amnistrador <span> (digite um email válido) </span></label>
+            <input class="admnistrator-email-class" id="admnistrator-email" type="email" name="" placeholder="Digite um e-mail" required/>
+
+            <label for="partcipants-password"> Senha de acesso para os participantes <span>(mínimo 8 caracteres)</span></label>
+            <input class="partcipants-password-class" id="partcipants-password" type="url" name="" placeholder="Digite uma senha" minlength="8" required/>
+
+            <input class="private event-class" type="checkbox" name="" id="private-event"/>
+            <label for="private-event" >Evento privado</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Dia e hora
+            </legend>
+
+            <label for="date"> Data </label>
+            <input type="date" name="" id="date"/>
+
+            <label for="begin"> Início </label>
+            <input class="being-class" id="begin" type="time">
+
+            <label for="end"> Fim </label>
+            <input class="end-class" id="end" type="time">
+        </fieldset>
+
+        <footer>
+            <button type="submit"> Salvar evento </button>
+        </footer>
+    </form>
+</body>
+</html>
