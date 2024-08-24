@@ -1,33 +1,104 @@
+.container {
+    background-color: #70747a;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-class {
+    display: flex;
+    background-color: #16171a;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.header-class div {
+    width: 100%;
+    max-width: 780px;
+}
+
+.header-title {
+    color: white;
+    padding: 25px 0px;
+}
+
+.header-subtitle {
+    color: rgb(49, 160, 204);
+    padding: 0px 0px 20px;
+}
+
+
 .event-create {
     display: flex;
     flex-direction: column;
-    padding: 200px;
     background-color: white;
+    border-radius: 10px;
+    border: 2px solid white;
+    padding: 67px 100px;
+    width: 100%;
+    max-width: 780px;
+    margin-top: -50px;
 }
 
-legend{
+caption-title {
+    color: #16171a;
     font-size: 24px;
     font-weight:bolder;
-    padding: 50px 40px;
+    padding: 20px 0px 30px 0px;
+    border-bottom: 1px solid #e8e9ee;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
 }
 
 label {
     font-size: 17px;
+    padding-bottom: 8px;
+    padding-top: 30px;
 }
 
 label span {
     font-size: 13px;
     color: gray;
+    opacity: 70%;
 }
 
-.event-information {
-    display: flex;
-    flex-direction: column;
+input:not([type="checkbox"]){
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
-input{
+textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+select {
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
+
+option {
+    font-size: 18px;
+}
+
+.private-event-class {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
