@@ -1,5 +1,5 @@
-.container {
-    background-color: #70747a;
+.event-create {
+    background-color: #c1c2c4;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -9,11 +9,11 @@
 .header-class {
     display: flex;
     background-color: #16171a;
-    height: 250px;
+    height: 330px;
     align-items: center;
     justify-content: center;
     width: 100%;
-
+    padding-bottom: 50px;
 }
 
 .header-class div {
@@ -32,11 +32,12 @@
 }
 
 
-.event-create {
+.data-to-fill {
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     border: 2px solid white;
     padding: 67px 100px;
     width: 100%;
@@ -44,7 +45,7 @@
     margin-top: -50px;
 }
 
-caption-title {
+.caption-title {
     color: #16171a;
     font-size: 24px;
     font-weight:bolder;
@@ -95,10 +96,59 @@ option {
     font-size: 18px;
 }
 
-.private-event-class {
+.checkbox {
+    padding: 15px 0px;
+    justify-items: center;
+
+}
+.date-time{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
 }
 
+.date {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+.time-begin {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+.time-end {
+        display: flex;
+        flex-direction: column;
+}
+
+footer {
+    background-color: #e8e8e9;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 2px solid #e8e8e9;
+    padding: 21px 100px;
+    width: 100%;
+    max-width: 780px;
+    margin-top: 2px;
+}
+
+button {
+    background-color: #26cf51;
+    color: white;
+    font-size: 19px;
+    border-radius: 5px;
+    height: 48px;
+    width: 100%;
+    margin-top: 26px;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #1b973e;
+    
+}
 

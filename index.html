@@ -18,11 +18,13 @@
                 <p class="header-subtitle"> O primeiro passo, é preencher esse <br> formulário de inscrição </p>
             </div>    
         </header>
+        
         <form class="event-create">
+            <div class="data-to-fill">
             <fieldset>
-                <caption-title>
+                <div class="caption-title">
                     Informações do Evento
-                </caption-title>
+                </div>
 
                 <label for="event-title"> Título do evento <span>(mínimo 8 caracteres)</span></label>
                 <input class="event-title-class" id="event-title" type="text" name="" placeholder="Digite o título do seu evento" maxlength="8" required />
@@ -47,9 +49,9 @@
             </fieldset>
 
             <fieldset>
-                <caption-title>
+                <div class="caption-title">
                     Privacidade
-                </caption-title>
+                </div>
 
                 <label for="admnistrator-email"> E-mail do amnistrador <span> (digite um email válido) </span></label>
                 <input class="admnistrator-email-class" id="admnistrator-email" type="email" name="" placeholder="Digite um e-mail" required/>
@@ -57,29 +59,43 @@
                 <label for="partcipants-password"> Senha de acesso para os participantes <span>(mínimo 8 caracteres)</span></label>
                 <input class="partcipants-password-class" id="partcipants-password" type="url" name="" placeholder="Digite uma senha" minlength="8" required/>
 
-                <input class="private-event-class" type="checkbox" name="" id="private-event"/>
-                <label for="private-event" >Evento privado</label>
+                <div class="checkbox">
+                    <input class="private-event-class" type="checkbox" name="" id="private-event"/>
+                    <label for="private-event" >Evento privado</label>
+                </div>    
             </fieldset>
 
-            <fieldset class="date-time">
-                <caption-title>
-                    Dia e hora
-                </caption-title>
+            <fieldset>
+                <div class="caption-title">
+                    Data e hora
+                </div>
+                <div class="date-time">  
+                    <div class="date">
+                        <label for="date"> Data </label>
+                        <input type="date" name="" id="date"/>
+                    </div>
+                    
+                    <div class="time-begin">
+                        <label for="begin"> Início </label>
+                        <input class="being-class" id="begin" type="time">
+                    </div>
 
-                <label for="date"> Data </label>
-                <input type="date" name="" id="date"/>
+                    <div class="time-end">
+                        <label for="end"> Fim </label>
+                        <input class="end-class" id="end" type="time">
+                    </div>
 
-                <label for="begin"> Início </label>
-                <input class="being-class" id="begin" type="time">
+                </div>
 
-                <label for="end"> Fim </label>
-                <input class="end-class" id="end" type="time">
             </fieldset>
-
+        </div>
             <footer>
                 <button type="submit"> Salvar evento </button>
             </footer>
+  
         </form>
+        
+
     </div>
 </body>
 </html>
