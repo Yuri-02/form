@@ -33,7 +33,7 @@
                 <input class="link-event-class" id="event-link" type="text" name="" placeholder="Digite o link do evento" required/>
                 
                 <label for="whatsapp"> Whatsapp para contato <span> (somente números) </span></label>
-                <input class="whatsapp-class" id="whatsapp" type="number" placeholder="Digite seu número"  required/>
+                <input class="whatsapp-class" id="whatsapp" type="tel" pattern="[0-9]{2}[0-9]{5}[0-9]{4}" placeholder="(ddd)+telefone"  required/>
 
                 <label for="extra-information"> Informações extras <span> (Máx. 300 caracteres)</span> </label>
                 <textarea name="" id="extra-information" rows="8" cols="50" maxlength="300"></textarea>
